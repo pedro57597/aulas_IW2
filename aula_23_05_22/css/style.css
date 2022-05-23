@@ -1,0 +1,27 @@
+#lampada{
+
+    background-color: rgb(251, 0, 0);
+    width: 26%;
+    margin: 45px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    border-radius: 400px;
+    margin-left: 35%;
+
+}
+
+#botao{
+
+    background-color: rgb(255, 0, 0);
+    width: 88%;
+    margin: 15px;
+    font-size: 35px;
+    color: rgb(7, 3, 3);
+    text-align: center;
+    padding: 15px;
+    border-radius: 150px;
+    margin-left: 5.0%;
+
+}
