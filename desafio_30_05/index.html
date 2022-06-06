@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Desafio01</title>
+    <title>Exercício</title>
 </head>
-
 <body>
-    <Div class="container">
-        <Div class="ano">
-            Qual o ano do seu nascimento:
-            <input type="number" id="ano" name="ano">
-        </Div>
+    <form action="script.js" method="post">
+        <h1>Em que ano você nasceu?</h1>
+            <input type="number" name="ano" id="ano">
         <br>
-        <div class="sex">
-            Seu sexo:
-            <input type="radio" id="feminino" name="sex" value="Feminino">
-            <label for="feminino">Feminino</label>
-            <input type="radio" id="masculino" name="sex" value="Feminino">
-            <label for="masculino">Masculino</label>
-        </div>
+        <h1>Qual o seu sexo?</h1>
+            <input type="radio" id="sexo" name="sexo" value="Masculino">
+            <label>Masculino(cromossos XY)</label><br>
+            <input type="radio" id="sexo" name="sexo" value="Feminino">
+            <label>Feminino(cromossomos XX)</label><br>
         <br>
-        <div class="but">
-            <input type="button" name="button" onclick="calc()" value="CALCULAR" id="button">
-        </div>
-        <br>
-        <div class="result">
-            <div class="resultado">
-                Descobrimos sua idade e saberemos o se voce é menino(a)!
-            </div>
-            <br>
-            <div class="img_place">
-                <img class="img" src="img/ponto.png" alt="">
-            </div>
-        </div>
-        <h1 id="demo"></h1>
-    </Div>
+            <input type="button" id="calcular" value="calcular" onclick="calcular()"> 
+    </form>
+
+    <div id="resultado">
+        <figure><img src="imgs/imageminicial.png" id="image" alt=""></figure>
+        <h1 id="textoresultado"></h1>
+    </div>
+
     <script src="script.js"></script>
 </body>
-
 </html>
